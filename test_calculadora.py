@@ -40,3 +40,28 @@ def test_multiplicacao_por_1():
     calculadora = Calculadora()
     resultado = calculadora.multiplicar(7,1)
     assert resultado == 7
+
+def test_divisao_numeros_positivos():
+    calculadora = Calculadora()
+    resultado = calculadora.dividir(8,2)
+    assert resultado == 4
+
+def test_divisao_numeros_negativos():
+    calculadora = Calculadora()
+    resultado = calculadora.dividir(-6,-3)
+    assert resultado == 2
+
+def test_divisao_um_numero_positivo_um_numero_negativo():
+    calculadora = Calculadora()
+    resultado = calculadora.dividir(-12,4)
+    assert resultado == -3
+
+def test_divisao_por_zero():
+    calculadora = Calculadora()
+    with pytest.raises(ZeroDivisionError):
+        calculadora.dividir(8,0)
+
+def test_divisao_decimal():
+    calculadora = Calculadora()
+    resultado = calculadora.dividir(5, 2)
+    assert resultado == 2.5
