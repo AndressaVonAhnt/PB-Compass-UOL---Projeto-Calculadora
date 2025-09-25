@@ -28,7 +28,6 @@ Navegue até a pasta onde deseja salvar o projeto e clone o repositório.
 ```bash
 git clone [https://github.com/SEU-USUARIO/calculadora-tdd.git](https://github.com/SEU-USUARIO/calculadora-tdd.git)
 cd calculadora-tdd
+````
 
----
-
-Autora: Andressa Von Ahnt
+### Autora: Andressa Von Ahnt
